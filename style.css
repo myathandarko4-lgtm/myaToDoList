@@ -1,0 +1,130 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Poppins, sans-serif;
+}
+
+body {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #96fb49, #30ebad);
+}
+
+.container {
+width: 420px;
+padding: 30px;
+border-radius: 50px;
+background: rgba(15, 108, 127, 0.15);
+backdrop-filter: blur(15px);
+box-shadow: 0 50px 30px rgba(25, 1, 1, 0.25);
+}
+
+h1 {
+text-align: center;
+color: white;
+margin-bottom: 20px;
+}
+
+.inputBox {
+display: flex;
+gap: 10px;
+margin-bottom: 15px;
+}
+
+
+input {
+flex: 50;
+padding: 15px;
+border: rgb(18, 12, 0);
+border-radius: 50px;
+outline: none;
+font-size: 16px;
+background: rgb(244, 243, 240);
+}
+
+button {
+padding: 10px 14px;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+transition: .3s;
+background: rgb(250, 249, 243);
+}
+/*
+button:hover {
+transform: scale(1.05);
+}
+
+ All and favourite 
+.filters {
+display: flex;
+gap: 10px;
+margin-bottom: 15px;*/
+
+
+
+ul {
+list-style: none;
+}
+
+li {
+background: rgb(245, 244, 244);
+padding: 12px;
+margin-bottom: 10px;
+border-radius: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+animation: fade .3s;
+}
+
+.task {
+cursor: pointer;
+}
+
+/* completed */
+.completed {
+text-decoration: line-through;
+color: gray;
+}
+
+.actions button {
+margin-left: 5px;
+}
+
+.editInput {
+padding: 8px;
+border-radius: 18px;
+border: 1px solid #ccc;
+font-size: 14px;
+width: 60%;
+}
+
+.fav {
+background: gold;
+}
+
+.delete {
+background: red;
+color: white;
+}
+
+.favorite {
+border-left: 18px solid rgb(247, 254, 32);
+background: #fff8dc;
+}
+
+@keyframes fade {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.filters {
+display: flex;
+gap: 10px;
+margin-top: 15px;
+justify-content: center;
+}
